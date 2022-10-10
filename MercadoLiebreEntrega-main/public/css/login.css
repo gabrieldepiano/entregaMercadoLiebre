@@ -1,0 +1,375 @@
+/*Header*/
+
+* {
+    margin: 0 px ;
+    padding: 0 px ;
+    box-sizing: border-box ;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    margin:0;
+}
+    
+ 
+header {background-color: #EAC926;
+    
+}
+
+.primeraSeccionHeader{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 4%;
+    align-items: flex-start;
+}
+
+img.Logo-ml {
+    width: 40%;
+    align-self: center;
+}
+
+.barra-busqueda-icono{
+    display: flex;
+    align-self: center;
+    gap: 1%;
+    margin-right: 10%;
+ 
+}
+
+.barra-busqueda{
+    padding: 1px 1px;
+    height: 1.3em;
+    width: 15em;
+    left:10%;
+    text-indent: -1px;
+    align-self: center;
+  
+}
+
+
+
+
+#icono-lupa{
+    padding: 1% 1%;
+    background-color: white;
+    color: black;
+    height: 1.4em;
+    border: 1px solid #777777;
+    border-radius: 2px;
+    align-self: center;
+}
+
+
+
+.advertencia-compra-cuotas{
+    text-align: center;
+    align-self: center;
+
+}
+
+.burger-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    }
+
+.burger-menu i{
+    background-color:#03264C;
+    color: #ebebeb;
+    padding: 3%;
+    margin:5%;
+    border-radius: 10px;
+    font-size: 200%;
+    
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+
+.advertencia-compra-cuotas1{
+    display: none;
+}
+
+.advertencia-compra-cuotas2{
+    margin-left: 25%;
+}
+
+
+
+
+
+/*FOOTER*/
+
+
+.pago-con-tarjeta{
+    text-align: center;
+}
+
+.pago-con-tarjeta i{
+    color: blue;
+}
+
+.pago-con-tarjeta h3{
+    margin: 1px 10px 12px;
+}
+
+.pago-con-tarjeta p{
+    margin: -15px 1px 1px;
+}
+
+.envio-gratis{
+    text-align: center;
+}
+
+.envio-gratis i{
+    color: blue;
+}
+
+.envio-gratis h3{
+    margin: 1px 10px 12px;
+}
+
+.envio-gratis p{
+    margin: -15px 1px 1px;
+}
+
+.seguridad-principio{
+    text-align: center;
+}
+
+.seguridad-principio i{
+    color: blue;
+}
+
+.seguridad-principio h3{
+    margin: 1px 10px 12px;
+}
+
+.seguridad-principio  p{
+    margin: -15px 1px 1px;
+}
+
+
+
+.navbar{
+    display: none;
+    
+}
+
+.section-articulos article section h3{
+    display: none;
+}
+
+/*MAIN*/
+
+.botonEnviar:hover{
+    background-color: #0022AA;
+}
+
+main{
+    background-color: #ebebeb;
+}
+
+form .formulario{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.partes-formulario{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    
+}
+
+.input-formulario, .boton-formulario{
+    width: 40%;
+    height: 25px;
+}
+
+.input-formulario{
+    text-indent: 1px;
+    border: 0ch;
+    border-radius: 3px;
+}
+
+.boton-formulario{
+    background-color: rgb(77, 77, 247);
+    color: white;
+    border: 0ch;
+    border-radius: 3px;
+}
+
+
+
+@media (min-width: 481px){ /*TABLET*/
+   
+  
+    /*.section-articulos article{
+        box-shadow: 0px 0px 10px rgba(0,0,0,0);
+    }*/
+
+    header {background-color: #EAC926;
+        padding-bottom: 1%;
+
+        box-sizing: content-box;
+    }
+
+    .advertencia-compra-cuotas2{
+        display: none;
+    }
+    
+    .advertencia-compra-cuotas1{
+        display: block;
+    }
+
+    .primeraSeccionHeader{
+        align-items: center;
+    }
+    
+
+    .section-articulos article {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+        transition: box-shadow 0.3s ease-in-out;
+      }
+      
+      .section-articulos article:hover{
+        box-shadow: 0px 0px 10px rgba(100,100,100,1);
+      }
+
+
+    .navbar{
+        display: flex;   
+        flex-direction: row;
+       
+    }
+   
+
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        justify-content: space-around;
+        white-space: nowrap;
+            
+    }
+
+    .segundaSeccionHeader .navbar{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start; /*hace que ninguna de las palabras vaya para abajo*/
+        margin-top: 2%;
+       
+
+    }
+
+    .segundaSeccionHeader .navbar ul li{ 
+        padding-right: 30px;
+    
+    }
+
+
+    .burger-menu{
+        display: none;
+    }
+
+    .section-articulos .sub-section-articulos{
+        width: 22%;
+        height: 10%;
+        margin: 0.5% auto;
+    }
+
+    .barra-busqueda-icono{
+       
+        margin-left: 5%;
+     
+    }
+
+    .advertencia-compra-cuotas1{
+        display: none;
+    }
+    
+    .advertencia-compra-cuotas2{
+        margin-left: 25%;
+    }
+    
+}
+
+
+@media (min-width: 769px){
+    
+    .navbar{
+        display: flex;   
+        flex-direction: row;
+        gap: 5%;    
+    }
+  
+
+    .section-articulos article section h3{
+        display: flex;
+    } 
+
+    .section-articulos article {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+        transition: box-shadow 0.3s ease-in-out;
+      }
+      
+      .section-articulos article:hover{
+        box-shadow: 0px 0px 10px rgba(100,100,100,1);
+      }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .footerClase{
+        display: flex;
+ 
+    }
+
+    .footerClase i:hover{
+       color: violet;
+    }
+
+    .barra-busqueda-icono{
+        display: flex;
+        align-self: center;
+        gap: 1%;
+        margin-right: 1%;
+     
+    }
+
+    .advertencia-compra-cuotas1{
+        margin-right: 4%;
+    }
+
+    .barra-busqueda-icono{
+        margin-left: 1%;     
+    }
+
+    .barra-busqueda{
+       width: 200px;
+    }
+
+    img.Logo-ml {
+        width: 25%;
+        align-self: center;
+    }
+
+    .advertencia-compra-cuotas1{
+        display: block;
+    }
+    
+    .advertencia-compra-cuotas2{
+        display:none;
+    }
+    
+   
+}
